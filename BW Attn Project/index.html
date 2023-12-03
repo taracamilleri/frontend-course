@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><h2>Attention Training</h2></div>
+            <ul class="nav-items">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="focused-attention">Focused Attention</a></li>
+            </ul>
+            <a href="contact" class="contact-btn">Contact</a>
+            <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="sidebar">
+            <ul class="sidebar-items">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="focused-attention">Focused Attention</a></li>
+                <li><a href="contact" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const burgerbutton=document.querySelector('.burger-menu')
+        const sidebar= document.querySelector('.sidebar')
+        burgerbutton.onclick = function() {
+            sidebar.classList.toggle('open')
+        }
+    </script>
+    <!--
+    <main>
+        <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01768/full">Attention Training</a>
+            
+        <div class = "overlay">
+            <div class = "img-container">
+                <div class = "box" id ="woman"></div>
+                <div class = "box" id="panther"></div>
+            </div>
+            <div class="overlay-text">
+                WHERE IS YOUR FOCUS?
+            </div>
+        </div>
+
+        <p>Attention is the cognitive process of selectively focusing on one aspect of the environment while ignoring all else.</p>
+    
+        <video width="320" height="240" controls>
+            <source src="https://www.youtube.com/watch?v=0Qz0jEpZJ6c" type="video/mp4">
+            <source src="https://www.youtube.com/watch?v=0Qz0jEpZJ6c" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </main>
+
+<!--how to add h3 to below?-->
+<!--social media icons: used up my kit with font-awesome-->
+<!--
+    <div class="footer">
+        <div class="footer-item">
+            <h3>USEFUL LINKS</h3>
+            <a href="#" class="footer-link">About</a>
+        </div>
+
+        <div class="footer-item">
+            <h3>NEWSLETTER</h3>
+            <input type="text" placeholder="Your Email Address">
+            <button type="submit" id=".save" name=".save" class="primaryCta" >
+                Subscribe Now
+              </button>
+        </div>
+
+        <div class="footer-item">
+            <h3>CONTACT</h3>
+            <p>123 XYZ Road, NY, NY</p>
+            <a href="#"class="fa fa-facebook"></a>
+            <a href="#"class="fa fa-twitter"></a>
+            <a href="#"class="fa fa-instagram"></a>
+        </div>
+    </div>-->
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    background-image: url("girl-tiger.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width:100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-btn {
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.contact-btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+/* SIDEBAR */
+.sidebar{
+  position: absolute;
+  right: 2rem;
+  top:60px;
+  height: 0;
+  transition: height 0.2s ease;
+  width:300px;
+  background-color:rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  overflow: hidden;
+  display:none;
+}
+
+.sidebar.open{
+    height: 300px;
+}
+
+.sidebar-items li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+@media (max-width: 1000px) {
+    .navbar .nav-items,
+    .navbar .contact-btn{
+        display: none;
+    }
+    .sidebar,
+    .burger-menu {
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* styling footer h3 divs?
+.footer-item {
+ font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;   
+}*/
+/*
+.footer {
+    background-color: black;
+    color:whitesmoke;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top:auto;
+}
+
+.footer-item {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    color:azure;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input {
+    border: 1px solid black;
+    width:100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+   margin-right: 10px;
+}
+
+.button {
+    border: 1px solid black;
+    width:100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    border-radius:10px ;
+}
+
+.footer-link
+{
+    text-decoration: none;
+    color:azure;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* z-index : CSS property : controls stacking order of elements 
